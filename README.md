@@ -18,3 +18,21 @@ In der Datei ``bachelorthesis.tex`` kann festgelegt werden, ob für jedes Kapite
 Viel Spass damit!
 
 SIn16
+
+## Installation von LaTeX
+
+### Ubunu
+
+Für die Installation von Git, LaTeX und TexMaker unter Unbuntu werden folgende Befehle ausgeführt:
+
+```
+sudo apt-get --assume-yes install git
+sudo apt-get --assume-yes install texmaker
+sudo apt-get --assume-yes install biber
+sudo apt-get --assume-yes install texlive texlive-lang-german texlive-latex-extra texlive-fonts-extra
+```
+Mit ``--assume-yes`` können die Befehle in ein Shell Skript gepackt werden. Dann einfach Ausführen und abwarten. Wenn alles fertig ist kann mit Git alles ausgecheckt und mit ``./go.sh`` die PDF erzeugt werden.  
+
+### Windows
+
+Mit MikTex und TextMaker für Windows ist der Großteil erledigt. Wer noch eine Bash haben möchte um ``./go.sh `` auszuführen, der installiert sich die Git-Bash.
