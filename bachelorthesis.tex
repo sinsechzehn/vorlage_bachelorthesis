@@ -51,15 +51,14 @@
 
 % Rudi will kein Abbildungsverzeichnis
 \listoffigures
-\addcontentsline{toc}{chapter}{\listfigurename}
-
 \listoftables
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-
 \lstlistoflistings
-\addcontentsline{toc}{chapter}{Listings}
 
-\newpage
+\cleardoublepage
+
+\input{src/appendix.tex}
+
+\cleardoublepage
 
 \input{src/selbstaendigkeit.tex}
 

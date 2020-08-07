@@ -8,6 +8,9 @@
 \usepackage[table]{xcolor}
 \usepackage{nicefrac}
 
+%https://tex.stackexchange.com/questions/97474/how-to-add-lstlistoflistings-to-the-table-of-contents
+\usepackage[nottoc]{tocbibind}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % In diesem Abschnitt gibst du deine persönlichen Daten sowie den Kontext deiner Arbeit an
 % das \xspace am Ende der Einträge muss vorhanden bleiben. Es regelt das Whitespace-
@@ -202,6 +205,9 @@
   moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
 }
 
+\renewcommand{\lstlistoflistings}{\begingroup
+\tocfile{\lstlistingname}{lol}
+\endgroup}
 
 % Silbentrennung
 \hyphenation{Soft-ware-pro-jekt}
